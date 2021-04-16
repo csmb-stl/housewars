@@ -4,6 +4,7 @@
       <title>Masaic Week Submissions</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
       <style> 
          .article-scroll-mobile {
          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -19,13 +20,61 @@
          body {
          background: #989f7a;
          }
+
+         html {
+         font-size: 100%;
+         line-height: 1.5rem;
+         box-sizing: border-box;
+         font-family: Arial, Helvetica, sans-serif;
+         height: 100%;
+         }
+
+         body {
+         margin: 0 auto;
+         padding: 0;
+         min-height: 100%;
+         }
+
+         *,
+         *::before,
+         *::after {
+         box-sizing: inherit;
+         }
+
+         img,
+         video {
+         width: 50%;
+         height: auto;
+         display: block;
+         }
+
+         .gallery-img {
+         height: 100%;
+         object-fit: cover;
+         transition: 0.5s ease-in-out;
+         }
+
+         .gallery-img:hover {
+         transform: scale(0.8);
+         }
       </style>
    </head>
    <body>
       <div class="embed-responsive embed-responsive-21by9">
          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_Lyblyjroek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <br>
+      <center>
+         <main class="gallery-page">
+               <div class="gallery-item">
+                  <a href="signup.html">
+                  <img
+                     src="MicrosoftTeams-image.png"
+                     class="gallery-img"
+                  />
+                  </a>
+               </div>
+         </main>
+      </center>
       <div class="container shadow py-2 ">
          <div class="row">
             <div class="col">
@@ -56,5 +105,6 @@
       </div>
       <script src="/housewars/assets/javascript/bootstrap/jquery.min.js"></script>
       <script src="/housewars/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+
    </body>
 </html>
